@@ -5,9 +5,9 @@ from urllib.request import urlopen
 from flask import request, abort
 from jose import jwt
 
-AUTH0_DOMAIN = 'dev-rcqurksb.us.auth0.com'
+AUTH0_DOMAIN = 'qoi.us.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'localhost:8080/login'
+API_AUDIENCE = 'casting'
 
 
 # AuthError Exception
