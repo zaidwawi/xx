@@ -24,12 +24,12 @@ class Movie(db.Model):
     title = Column(String)
     release_date = Column(DateTime)
 
-    def format(self):
-        return {
-            "id": self.id,
-            "title": self.title,
-            "release_date": self.release_date
-            }
+#     def format(self):
+#         return {
+#             "id": self.id,
+#             "title": self.title,
+#             "release_date": self.release_date
+#             }
 
     def insert(self):
         db.session.add(self)
@@ -51,13 +51,13 @@ class Actor(db.Model):
     age = Column(Integer)
     gender = Column(String)
 
-    def format(self):
-        return {
-            "id": self.id,
-            "name": self.name,
-            "age": self.age,
-            "gender": self.gender,
-        }
+#     def format(self):
+#         return {
+#             "id": self.id,
+#             "name": self.name,
+#             "age": self.age,
+#             "gender": self.gender,
+#         }
 
     def insert(self):
         db.session.add(self)
